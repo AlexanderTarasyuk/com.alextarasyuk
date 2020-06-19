@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="com.alextarasyuk" package="com.alextarasyuk" version="1.0.0" company="OTarasiuk" />
+	
+	<!-- output -->
+	<app main="Main" file="com.alextarasyuk" path="bin"/>
+	
+	
+	
+	<!-- classpath, haxe libs -->
+	<source path="src" />
+	
+	<haxelib name="stablexui" />
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	
+	<!-- assets -->
+	<icon path="assets/openfl.svg" />
+	<assets path="assets/img" rename="img" />
+	<assets path="assets/fonts" rename="fonts" />
+	<assets path="./textFile.txt" embed="false" />
+	<!-- optimize output
+	<haxeflag name="-dce full" /> -->
+	
+	
+</project>
